@@ -1,0 +1,24 @@
+SATELLITE IMAGE COLOR ANALYZER - QUICK START
+
+1. Open this folder in VS Code.
+2. Open Terminal -> New Terminal.
+3. Run:
+   python --version
+
+4. Create virtual environment:
+   python -m venv .venv
+
+5. Activate it:
+   .venv\Scripts\activate
+
+6. Install packages:
+   python -m pip install --upgrade pip
+   pip install -r requirements.txt
+
+7. Start:
+   streamlit run app.py
+
+IMPORTANT:
+This is an RGB/HSV prototype. Its percentages are pixel percentages,
+not geographic area. Do not call RGB-only processing NDVI/NDWI/NDBI.
+Use real satellite data for testing and document the source.
